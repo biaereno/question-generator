@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de perguntas para entrevista</title>
+</head>
+
+<body>
+    <h1>Gerador de perguntas para entrevista</h1>
+
+    <script>
+        function generateQuestion(){
+            if (ss1.checked == true){
+                communication.style.display = "block";                      
+            }else{
+                communication.style.display = "none";
+            }
+            if (ss2.checked == true){
+                commitment.style.display = "block";                      
+            }else{
+                commitment.style.display = "none";
+            }
+            if (ss3.checked == true){
+                initiative.style.display = "block";                      
+            }
+            else{
+                initiative.style.display = "none";
+            }
+        }
+    </script>
+
+    <input type="checkbox" id="ss1"> Comunicação
+    <br>
+    <input type="checkbox" id="ss2"> Comprometimento
+    <br>
+    <input type="checkbox" id="ss3"> Iniciativa
+    <br>
+    <br>
+    <button type="submit" id="botao" onclick="generateQuestion()">Gerar perguntas</button>
+
+    <div id="communication" style="display:none">
+        <p>[Comunicação] Conte-me sobre uma ocasião em que você teve que comunicar uma mensagem desconfortável ao seu
+            gerente ou ao seu cliente. Como você lida com isso?</p>
+        <p>[Comunicação] Você já teve que "vender" uma ideia para seus colegas de trabalho ou grupo? Como você fez isso?
+            Quais foram os resultados?</p>
+        <p>[Comunicação] Como você foi eficaz em explicar desafios técnicos complicados para alguém que não tem formação
+            técnica?</p>
+    </div>
+
+    <div id="commitment" style="display:none">
+        <p>[Comprometimento] Dê exemplo de situações onde você atingiu um elevado estado de motivação para o trabalho
+            ainda que estivesse trabalhando sozinho. Em que circunstância isto ocorreu e por que ficou motivado?</p>
+        <p>[Comprometimento] Conte-me sobre situações em seu passado quando você estava altamente orientado para atingir
+            um objetivo, com elevado nível de motivação. Não seja modesto: permita-se dar credito a você por ter
+            conseguido realizar o trabalho.</p>
+        <p>[Comprometimento] Você já deixou voluntariamente em emprego ou pediu transferência ou foi despedido por não
+            se identificar com
+            os pontos de vista de seus superiores? Relate a experiência.</p>
+    </div>
+
+    <div id="initiative" style="display:none">
+        <p>[Iniciativa] Como chegam até você as tarefas de trabalho que você deve cumprir? Você tem oportunidade de decidir sobre o
+            que fazer? Exemplos</p>
+        <p>[Iniciativa] Descreva uma situação em que os resultados alcançados não estavam á altura de suas
+            expectativas/orçamento. O que você fez para corrigir a situação?</p>
+        <p>[Iniciativa] Que idéias você gostaria de ver introduzidas em sua organização? O que tem feito pra
+            colocá-las em práticas?</p>
+    </div>
+</body>
+
+</html>
